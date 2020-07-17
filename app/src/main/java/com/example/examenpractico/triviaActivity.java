@@ -130,10 +130,12 @@ public class triviaActivity extends AppCompatActivity {
         if(i >= preguntas.length){
             if(contadorCorrectas == preguntas.length){
                 Intent intent = new Intent(this, GanadorActivity.class);
+                System.out.println("Ganador");
                 startActivity(intent);
             }else {
                 Intent intent = new Intent(this, PerdedorActivity.class);
-                intent.putExtra("info_correctas",contadorCorrectas);
+                intent.putExtra("aciertos",contadorCorrectas);
+                System.out.println("Perdedor");
                 startActivity(intent);
             }
         }else{
