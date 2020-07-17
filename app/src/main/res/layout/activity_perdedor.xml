@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerdedorActivity">
+
+    <ImageView
+        android:id="@+id/sad_face"
+        android:layout_width="176dp"
+        android:layout_height="231dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/sad" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="172dp"
+        android:layout_height="31dp"
+        android:layout_alignTop="@+id/sad_face"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="191dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/losiento"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="172dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/sad_face"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/haperdido"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt_aciertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/msj_perdedor"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="355dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/txt_aciertos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boton_redondo"
+        android:onClick="JugarNuevamente"
+        android:text="@string/volver" />
+
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="355dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/btn_volver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:onClick="salir"
+        android:text="@string/salir" />
+
+</RelativeLayout>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">examenPractico</string>
+    <string name="inicio">Trivia Mágica</string>
+    <string name="btn_inicio">Empezar</string>
+    <string name="creditos">Desarrollado por E. Martinez y J. Pinargote</string>
+    <string name="msj_ganador">Ha ganado una entrada al cine</string>
+    <string name="salir">Salir</string>
+    <string name="losiento">Lo siento</string>
+    <string name="haperdido">Ha perdido</string>
+    <string name="msj_perdedor">Ha respondido 3 preguntas</string>
+    <string name="volver">Volver a Jugar</string>
+
 </resources>
