@@ -88,28 +88,28 @@ public class triviaActivity extends AppCompatActivity {
         btn_opt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                handleChoose(1);
+                handleChoose(0);
             }
         });
 
         btn_opt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                handleChoose(2);
+                handleChoose(1);
             }
         });
 
         btn_opt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                handleChoose(3);
+                handleChoose(2);
             }
         });
 
         btn_opt4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                handleChoose(4);
+                handleChoose(3);
             }
         });
     }
@@ -134,8 +134,8 @@ public class triviaActivity extends AppCompatActivity {
                 startActivity(intent);
             }else {
                 Intent intent = new Intent(this, PerdedorActivity.class);
-                intent.putExtra("aciertos",contadorCorrectas);
-                System.out.println("Perdedor");
+                intent.putExtra("aciertos",String.valueOf(contadorCorrectas));
+                System.out.println("Perdedor" + contadorCorrectas );
                 startActivity(intent);
             }
         }else{
