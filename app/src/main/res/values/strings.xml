@@ -9,5 +9,6 @@
     <string name="haperdido">Ha perdido</string>
     <string name="msj_perdedor">Ha respondido 3 preguntas</string>
     <string name="volver">Volver a Jugar</string>
+    <string name="intrucciones">Responde correctamente todas las preguntas de la trivia y gana una entrada totalmente gratis!</string>
 
 </resources>
