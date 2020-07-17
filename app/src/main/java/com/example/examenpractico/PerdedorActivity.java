@@ -20,7 +20,6 @@ public class PerdedorActivity extends AppCompatActivity {
         txtAciertos = (TextView)findViewById(R.id.txt_aciertos);
         valor = "Ha respondido " + valor + " preguntas";
         txtAciertos.setText(valor);
-
     }
 
     public void salir(View v) {
