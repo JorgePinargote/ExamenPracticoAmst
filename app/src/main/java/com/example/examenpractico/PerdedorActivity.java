@@ -18,7 +18,8 @@ public class PerdedorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_perdedor);
         String valor = getIntent().getExtras().getString("aciertos");
         txtAciertos = (TextView)findViewById(R.id.text_inicio);
-        txtAciertos.setText("Ha respondido " + valor + " preguntas");
+        String texto = "Ha respondido " + valor + " preguntas";
+        txtAciertos.setText(texto);
 
     }
 
